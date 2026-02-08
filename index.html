@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A page showcasing a Login Form with 3 different centering techniques: Flexbox, Grid, and Absolute Positioning.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eshemzy | STM Login Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="web-cont">
+
+    <!-- FLEXBOX -->
+    <section class="flexbox">
+      <span class="centering flex--centering">FLEXBOX</span>
+
+      <div class="form-wrapper">
+        <div class="form-title">LOGIN</div>
+
+        <form action="/form-auth" method="post">
+          <div class="form-user">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="Enter Username">
+          </div>
+
+          <div class="form-password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" name="password" id="password" placeholder="Password">
+          </div>
+
+          <div class="form-remember">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+
+          <button type="button" class="btn login--btn">LOGIN</button>
+
+          <div class="form-forgot">
+            <p>Forgot password?</p>
+            <a href="/forgot">click here!</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- GRID -->
+    <section class="grid">
+      <span class="centering grid--centering">GRID</span>
+
+      <div class="form-wrapper">
+        <div class="form-title">LOGIN</div>
+
+        <form action="/form-auth" method="post">
+          <div class="form-user">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="Enter Username">
+          </div>
+
+          <div class="form-password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" name="password" id="password" placeholder="Password">
+          </div>
+
+          <div class="form-remember">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+
+          <button type="button" class="btn login--btn">LOGIN</button>
+
+          <div class="form-forgot">
+            <p>Forgot password?</p>
+            <a href="/forgot">click here!</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- POSITIONING -->
+    <section class="positioning">
+      <span class="centering positioning--centering">POSITIONING</span>
+
+      <div class="form-wrapper">
+        <div class="form-title">LOGIN</div>
+
+        <form action="/form-auth" method="post">
+          <div class="form-user">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="Enter Username">
+          </div>
+
+          <div class="form-password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" name="password" id="password" placeholder="Password">
+          </div>
+
+          <div class="form-remember">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+
+          <button type="button" class="btn login--btn">LOGIN</button>
+
+          <div class="form-forgot">
+            <p>Forgot password?</p>
+            <a href="/forgot">click here!</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/0efce2a90a.js" crossorigin="anonymous"></script>
+</body>
+</html>
