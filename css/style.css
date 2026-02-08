@@ -49,12 +49,12 @@ body, html {
   background-color: var(--pry-clr-fade);
   line-height: 1.6;
 }
-section > * {
+section > div {
   height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-inline: auto;
-  border: 1px solid #000;
+  border-bottom: 1px solid #333;
 }
 .flexbox-inner {
   display: flex;
@@ -83,4 +83,31 @@ section > * {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 340px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  border-radius: var(--radius-1);
+  overflow: hidden;
+}
+.form-title {
+  text-align: center;
+  font-size: var(--fs-4);
+  background: var(--pry-clr);
+  padding: var(--space-3) 0;
+  font-weight: 700;
+  color: #fff;
+}
+.wrapper-inner {
+  padding: var(--space-3);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
