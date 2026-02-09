@@ -46,7 +46,7 @@ body, html {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: var(--pry-clr-fade);
+  background-color: var(--bg-clr-3);
   line-height: 1.6;
 }
 section > div {
@@ -67,6 +67,9 @@ section > div {
   display: grid;
   place-items: center;
   background-color: #ffc482;
+}
+.positioning-inner {
+  background-color: var(--pry-clr-fade);
 }
 .flexbox-inner,
 .grid-inner,
