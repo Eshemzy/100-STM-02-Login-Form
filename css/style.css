@@ -54,7 +54,7 @@ section > div {
   width: 100%;
   max-width: 1100px;
   margin-inline: auto;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid darkgrey;
 }
 .flexbox-inner {
   display: flex;
@@ -76,6 +76,9 @@ section > div {
   top: 3%;
   left: 50%;
   transform: translate(-50%);
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: var(--fs-3);
 }
 .positioning-inner .form-wrapper {
   position: absolute;
@@ -87,7 +90,7 @@ section > div {
 
 .form-wrapper {
   width: 100%;
-  max-width: 340px;
+  max-width: 320px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
