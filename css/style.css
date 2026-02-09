@@ -71,15 +71,6 @@ section > div {
 .positioning-inner {
   position: relative;
 }
-.centering {
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  transform: translate(-50%);
-  text-decoration: underline;
-  font-weight: 700;
-  font-size: var(--fs-3);
-}
 .positioning-inner .form-wrapper {
   position: absolute;
   top: 50%;
@@ -87,27 +78,37 @@ section > div {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+.centering {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%);
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: clamp(0.875rem, 5vw, 1.5rem);
+}
 
 .form-wrapper {
   width: 100%;
-  max-width: 320px;
+  max-width: clamp(17rem, 12.8rem + 24vw, 20rem);
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  border-radius: var(--radius-1);
+  gap: clamp(1.3rem, 1.02rem + 1.6vw, 1.5rem);
+  border-radius: clamp(0.375rem, 0.2rem + 1vw, 0.5rem);
   overflow: hidden;
 }
 .form-title {
   text-align: center;
-  font-size: var(--fs-4);
+  font-size: clamp(1.5rem, 0.8rem + 4vw, 2rem);
   background: var(--pry-clr);
-  padding: var(--space-3) 0;
+  padding: clamp(0.5rem, -0.2rem + 4vw, 1rem) 0;
   font-weight: 700;
   color: #fff;
 }
 .wrapper-inner {
-  padding: var(--space-3);
+  padding: 0 clamp(0.25rem, -0.1rem + 2vw, 0.5rem);
+  /* border: 1px solid #000; */
 }
 form {
   display: flex;
@@ -115,21 +116,21 @@ form {
   gap: var(--space-3);
 }
 .row {
-  max-width: 100%;
   position: relative;
-  border: 1px solid lightgrey;
+  max-width: 100%;
   display: flex;
+  border: 1px solid lightgrey;
   overflow: hidden;
-  border-radius: var(--radius-1);
+  border-radius: 0.375rem;
 }
 input[type="text"],
 input[type="password"] {
   width: 100%;
   border: none;
   outline: none;
-  font-size: var(--fs-1);
+  font-size: clamp(0.75rem, 0.662rem + 0.5vw, 0.813rem);
   padding: 0 var(--space-2);
-  transition: box-shadow 200ms ease;
+  transition: box-shadow 300ms ease;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -137,33 +138,48 @@ input[type="password"]:focus {
 }
 i {
   background-color: var(--pry-clr);
-  padding: var(--space-2) 12px;
+  padding: var(--space-2) 0.75rem;
   color: #fff;
-  font-size: var(--fs-2);
+  font-size: clamp(0.813rem, 0.55rem + 1.5vw, 1rem);
 }
 .remember {
   display: flex;
   gap: var(--space-2);
-  padding: var(--space-1);
+  padding: var(--space-2);
+}
+.remember label {
+  font-size: 0.875rem;
 }
 .btn {
-  padding: var(--space-2) 0;
+  max-width: 100%;
+  padding: clamp(0.375rem, 0.2rem + 1vw, 0.5rem) 0;
   display: flex;
   justify-content: center;
   background-color: var(--pry-clr);
   color: var(--sec-clr);
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 300ms ease;
+  border: none;
+  transition: transform 300ms ease, box-shadow 300ms ease;
 }
 .btn:hover {
-  background-color: #2873a1d7;
+  transform: translateY(-3px);
+  box-shadow: 0 3px #a1d5f5;
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 .form-forgot {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: var(--space-1);
 }
-.form-forgot p {
-  font-size: var(--fs-2);
+.form-forgot p,
+.form-forgot a {
+  font-size: clamp(0.813rem, 0.725rem + 0.5vw, 0.875rem);
+}
+.form-forgot a:hover {
+  text-decoration: none;
 }
