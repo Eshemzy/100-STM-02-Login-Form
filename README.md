@@ -17,10 +17,10 @@ CORE SKILL FOCUS
 - Spacing
 - Positioning
 
-  Major Lesson Learnt
+Major Lesson Learnt
 
-  "Making a page responsive across screens is not that complex"
+"Making a page responsive across screens is not that complex"
 
-  To view Live Page, Pls Click Here :
+To view Live Page, Pls Click Here :
 
-  http://eshemzy.github.io/100-STM-02-Login-Form
+http://eshemzy.github.io/100-STM-02-Login-Form
