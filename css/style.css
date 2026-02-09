@@ -204,9 +204,6 @@ i {
   .row {
     border-radius: clamp(0.25rem, 0.124rem + 0.42vw, 0.325rem);
   }
-  /* .row > * {
-    flex: 1;
-  } */
   input[type="text"],
   input[type="password"] {
     font-size: clamp(0.813rem, 0.5rem + 1.04vw, 1rem);
@@ -225,5 +222,43 @@ i {
   .form-forgot p,
   .form-forgot a {
     font-size: clamp(0.875rem, 0.498rem + 1.25vw, 1.1rem);
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .form-wrapper {
+    max-width: 25rem;
+    gap: 2rem;
+    border-radius: 0.65rem;
+  }
+  .wrapper-inner {
+    padding: 0 1rem;
+  }
+  form {
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .row {
+    border-radius: 0.325rem;
+  }
+  input[type="text"],
+  input[type="password"] {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  i {
+    font-size:1.5rem;
+    padding: 0.6rem 1rem;
+  }
+  .remember label {
+    font-size: 1.1rem;
+  }
+  .btn {
+    padding: 0.7rem 0;
+  }
+  .form-forgot p,
+  .form-forgot a {
+    font-size: 1.1rem;
   }
 }
