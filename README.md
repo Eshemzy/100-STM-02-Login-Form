@@ -55,8 +55,7 @@ This helped deepen my understanding of how different CSS systems handle alignmen
 │── index.html <br>
 │── css/ <br>
 │   └── style.css <br>
-│── images/ <br>
-│   └── '...'.png <br>
+│── README.md
 
 
 ⚙️<strong>Run Locally</strong> <br>
